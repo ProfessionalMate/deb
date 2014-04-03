@@ -1,1 +1,1 @@
-This is an application for instruction purpose.
+Welcome to RoR App for instruction

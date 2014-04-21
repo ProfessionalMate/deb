@@ -13,7 +13,7 @@ describe "index" do
 	end
 
 	it {should have_selector('title', text: 'All users')}
-	it {should have_selector('h1', text: 'All users')}
+	it {should have_selector('h1', text: 'All clients')}
 
 	describe "pagination" do
 
@@ -50,7 +50,7 @@ end
 		visit users_path
 	end
 	it {should have_selector('title', text: 'All users')}
-	it {should have_selector('h1', text: 'All users')}
+	it {should have_selector('h1', text: 'All clients')}
 	end
 	describe "Signup page" do
 before{visit signup_path}

@@ -1,7 +1,11 @@
-<%provide(title:'Sign up')%>
-<h1>Sign up</h1>
-<p>Sign up to access the instruction application</p>
-<div class = "row">
+<%provide(title:'Registration')%>
+
+	<%= stylesheet_link_tag "new", params[:action], media: "all" %>
+	</head>
+<div class = "row hero-unit">
+	<h1>Register</h1>
+<p class="center">Sign up to access services by ProfessionalMate</p>
+<head>
 	<div class = "span6 offset3">
 		<%= render 'shared/error_messages' %>
 		<%= form_for(@user) do |f| %>
@@ -15,7 +19,7 @@
 		<%= f.label :password %>
 		<%= f.password_field :password %>
 
-		<%= f.label :password_confirmation, "Confirmation" %>
+		<%= f.label :password_confirmation, "Confirm password" %>
 		<%= f.password_field :password_confirmation %>
 
 		<%= f.submit "Create my account", class: "btn btn-large btn-primary" %>

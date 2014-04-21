@@ -1,0 +1,88 @@
+@import "bootstrap";
+
+$GrayMediumLight: #eaeaea;
+@mixin box_sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border box;
+}
+html{
+	overflow-y: scroll;
+}
+body{
+	padding-top: 60px;
+	}
+
+textarea{
+	resize: vertical;
+}
+/*Typography*/
+ h1{
+ 	text-align: center;
+	margin-bottom: 10px;
+	color: $purple;
+	}
+
+/* forms */
+input, textarea, select, .uneditable-input {
+border: 1px solid #bbb;
+width: 100%;
+padding: 10px;
+font-size:1.2em;
+height: auto;
+margin-bottom: 15px;
+@include box_sizing;
+}
+#error_explanation {
+color: #f00;
+ul {
+list-style: none;
+margin: 0 0 18px 0;
+}
+}
+.field_with_errors {
+@extend .control-group;
+@extend .error;
+}
+
+#logo{
+	float: left;
+	margin-right: 10px;
+	font-size: 2.2em;
+	color: $blue;
+	text-transform: none;
+	letter-spacing: -1px;
+	padding-top: 9px;
+	font-weight: bold;
+	line-height: 1;
+	&:hover{
+	color: $red;
+	text-decoration: none;
+	}
+	}
+.hero-unit{
+	background: #e0e0e0;
+}
+	footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: $red;
+	a{
+	color: #555;
+& a:hover{
+	color: #222;
+	}
+	}
+	small{
+	float: left;
+	}
+	ul{
+	float: right;
+	list-style: none;
+	li{
+	float: left;
+	margin-left: 10px;
+	}
+	}
+}

@@ -1,6 +1,15 @@
-<div class="center hero-unit">
-<h1>Instruction App</h1>
-<h2>This is the home page for the instruction application</h2>
-<%= link_to "sign up now", signup_path, class: "btn btn-large btn-primary" %>
+<%= stylesheet_link_tag "home", params[:action], media: "all" %>
+<div class="sidebar">
+<%= link_to image_tag("office.jpg", alt: "Rails"), 'https://www.odesk.com/users/~014d085f9d7bc5a838' %>
+<%= link_to "Hire this developer", 'https://www.odesk.com/users/~014d085f9d7bc5a838', class: "btn btn-small btn-success"%>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<div class="center hero-unit">
+<h1>ProfessionalMate</h1>
+<h2>The Library, SkunkWorks</h2>
+<%= link_to "Engage", signup_path, class: "btn" %>
+</div>
+<aside class="center">
+<p><strong>
+&quot;SKUNKWORKS development&quot;
+</strong></p>
+</aside>
